@@ -9,11 +9,7 @@ One might say, "Couldn't this be a security issue? I mean, that would allow a us
 
 ## To do list:
 
-- [ ] Ensure authorized_keys is 600 when it is created
-- [ ] Allow settings stored on machine to use authenticated API for GitHub
-- [ ] Get RDOC working correctly
-- [ ] Bundler work to ensure the right version of ruby is used (?)
-- [ ] Clean up code
+All the to do list is at [issue #1](https://github.com/ChinggizKhan/github_keys/issues/1)
 
 ## License
 
