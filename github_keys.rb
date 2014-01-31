@@ -175,14 +175,19 @@ Finished at #{DateTime.now}" if @options.verbose
       data = resp.body
       result = JSON.parse(data)
 
-      if result['message']
-        puts result['message']
+      puts result
+
+      unless result.is_a?(Array)
+        if result['message'].present?
+          puts result['message']
+          exit 1
+        end
+
+        puts "Unknown error: GitHub responded in an unexpected manner."
         exit 1
       end
 
       keys = "";
-
-      puts result
 
       result.each do |key|
         keys += key['key'] + "\n"
