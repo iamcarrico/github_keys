@@ -166,13 +166,6 @@ Finished at #{DateTime.now}" if @options.verbose
 
       end
 
-
-
-
-
-
-      # TO DO - do whatever this app does
-
       #process_standard_input # [Optional]
     end
 
@@ -186,8 +179,6 @@ Finished at #{DateTime.now}" if @options.verbose
         puts result['message']
         exit 1
       end
-
-
 
       keys = "";
 
@@ -210,9 +201,6 @@ Finished at #{DateTime.now}" if @options.verbose
       #end
     end
 end
-
-
-# TO DO - Add your Modules, Classes, etc
 
 
 # Create and run the application
